@@ -10,4 +10,9 @@ class MyExamplesController < ApplicationController
     lotto = array.sample(6)
     render json: { message: lotto }
   end
+
+  def page_tracker
+    page_counter =
+      render json: { message: page_counter }
+  end
 end
